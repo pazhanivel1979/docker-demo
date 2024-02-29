@@ -7,6 +7,5 @@ RUN mkdir -p /home/app
 
 COPY ./app /home/app
 
-# no need for /home/app/server.js because of WORKDIR
-CMD ["node", "server.js"]
+CMD ["node", "/home/app/server.js"]
 
